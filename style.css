@@ -188,7 +188,86 @@ a{
    text-align: center;
    font-size: 30px;
    color: #323543;
+}
+
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+
+
+.productbox{
+width: 250px;
+height: 330px;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+margin: 10px 30px;
+padding: 40px;
+}
+
+.productbox img{
+    height: 180px;
+}
+
+
+.productbox p{
+    color: #f0070770;
+    font-family: myriad pro;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+
+.productbox a{
+    color:#6e64ff;
+    font-family: poppins;
+    font-size: 20px;    
+}
+
+
+.Buybtn{
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    background-image: linear-gradient(tomato,orange);
+    color: white;
+    display: none;
+    animation: fade 0.2s;
 
 }
 
+
+.productbox:hover .Buybtn{
+    display: flex;
+}
+
+
+.productbox:hover{
+    box-shadow: 3px 3px 30px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+
+.productbox:hover a:last-child{
+    color: white;
+    transform: all ease 0.3s;
+
+}
 
