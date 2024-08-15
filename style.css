@@ -28,7 +28,7 @@ a{
 }
 
 
-.searcharia{
+.searchbox{
     position: fixed;
     right: 90px;
     top: 50px;
@@ -42,18 +42,111 @@ a{
     box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.1);
     box-sizing: border-box;
     z-index: 1;
-    border: 1px solid rgba(167, 158, 245, 0.1);
+    border: 1px solid black;
     
 }
 
-.searcharia input{
+.searchbox input{
     width: 90px;
     height: 20px;
     border: none;
     outline: none;
     background-color: transparent;
     color:#1f1f1f;
-    font-family:calibri;
     font-size: 1 rem;
     padding: 0px 10px0;
+}
+.searchbox input::placeholder{
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: poppins;
+}
+
+
+.section1{
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-15%,-50%);
+}
+
+.section1 img{
+    height: 300px;
+}
+
+
+.section1Button{
+    position: absolute;
+    top: 50%;
+    left:90%;
+    transform: translate(-90%, -50%);
+}
+
+
+.section1Button h1{
+    font-family: Roboto;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 60px;
+    font-size: 50px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.08);
+    letter-spacing: 3px;
+    color:#3D3D4A;
+    text-transform: uppercase;
+}
+
+
+.color{
+    color: #7A72FF;
+}
+
+
+.BTN{
+  width: 150px;  
+  height: 40px;
+  background-color: #2f2e41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 20px;
+  color: white;
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  border: transparent !important;
+}
+
+
+.BTN:hover{
+    color:#FFFFFF ;
+    background-color: #6e64ff;
+    transition: all ease 0.5s;
+}
+
+
+.iconArea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+
+.iconArea{
+  position: fixed;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+  padding: 5px 0px;
+  z-index: 1;
 }
