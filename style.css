@@ -192,10 +192,10 @@ a{
 
 
 .product{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
     margin: 10px 0px;
     width: 100%;
 }
@@ -203,13 +203,11 @@ a{
 
 
 .productbox{
-width: 250px;
-height: 330px;
+height: inherit;
 justify-content: center;
 align-items: center;
 flex-direction: column;
 position: relative;
-margin: 10px 30px;
 padding: 40px;
 }
 
